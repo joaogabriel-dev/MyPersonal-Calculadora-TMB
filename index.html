@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal On-line (TMB)</title> 
+    <link rel="icon" type="icon" href="muscle.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada. --> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <img src="GUEDES_SITE2.png" alt="haltere" width="135" height="135"/>  
+          <!-- <a href="https://www.flaticon.com/br/icones-gratis/musculacao" title="musculação ícones">Musculação ícones criados por DinosoftLabs - Flaticon</a>-->
+        </header>
+    
+        <div class="content">
+          <form id="form">
+            <div class="form-group">
+              <label for="gender">Sexo</label>
+              <select id="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="age">Sua idade</label>
+              <!-- input type: Só números ~ min ="0": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" id="age" placeholder="Exemplo: 22"/> 
+            </div>
+            
+            <div class="form-group">
+              <label for="weight">Seu peso</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="weight" placeholder="Exemplo: 78" />
+            </div>
+            
+            <div class="form-group">
+              <label for="height">Sua altura (cm)</label>
+              <input type="number"  min="1" max="" id="height" placeholder="Exemplo: 176"/>
+            </div>
+            
+            <div class="form-group">
+              <label for="activity_level">Seu nível de atividade física</label>
+              <select id="activity_level">
+                <option value="1.2">Sedentário (Exercício mínimo)</option>
+                <option value="1.375">Levemente Ativo (1-3 dias por semana)</option>
+                <option value="1.55">Moderadamente ativo (3-5 dias por semana)</option>
+                <option value="1.725">Atividade intensa (6-7 dias por semana)</option>
+                <option value="1.9">Muito ativo (Atleta - 2 vezes por dia)</option>
+              </select>
+            </div>
+    
+            <div class="form-group">
+              <button type="submit"><b>CALCULAR</b></button> 
+              <br>
+              <button type="reset"><b>LIMPAR</b></button>
+            </div>
+          </form>
+          <div class="result-container" id="result"></div>
+        </div>
+      </div> 
+      <div class="copyright"> 
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/joaogabriel-dev/" target="_blank" rel="noopener noreferrer">João Gabriel;</a></p>
+    </div>
+</body>
+</html>
